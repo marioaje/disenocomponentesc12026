@@ -21,11 +21,17 @@ public class Main {
         personasController.insertar(
                 new personasModel(
                         0,
-                        "Mario",
-                        "Correo mario",
+                        "Isaac",
+                        "Correo Isaac",
                         "Activo"
                 )
         );
+
+        personasController.listar().forEach(
+                elementos ->
+                        System.out.println(elementos.getIdpersonas() + " - " + elementos.getNombre())
+        );
+
 
     }
 }
